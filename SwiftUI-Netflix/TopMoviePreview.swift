@@ -73,6 +73,10 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }//: VStack
+            .background(
+                LinearGradient.blackOpacityGradient
+                .padding(.top, 250) // gradientをtopからpaddingした部分から開始
+            )
         } //: ZStack
         .foregroundColor(.white)
     }
