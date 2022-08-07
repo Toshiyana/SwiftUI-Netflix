@@ -17,6 +17,7 @@
 		99F999D8289F696A00D1E6FC /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999D7289F696A00D1E6FC /* GlobalHelpers.swift */; };
 		99F999DC289F6A6600D1E6FC /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999DB289F6A6600D1E6FC /* StandardHomeMovie.swift */; };
 		99F999DE289F6B2800D1E6FC /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999DD289F6B2800D1E6FC /* HomeVM.swift */; };
+		99F999E0289FB4AB00D1E6FC /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999DF289FB4AB00D1E6FC /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		99F999D7289F696A00D1E6FC /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		99F999DB289F6A6600D1E6FC /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		99F999DD289F6B2800D1E6FC /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		99F999DF289FB4AB00D1E6FC /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				99F999CF289F665E00D1E6FC /* Home */,
 				996A1C6228281984005731E7 /* Assets.xcassets */,
 				996A1C6428281984005731E7 /* Preview Content */,
+				99F999DF289FB4AB00D1E6FC /* TopMoviePreview.swift */,
 			);
 			path = "SwiftUI-Netflix";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				99F999DE289F6B2800D1E6FC /* HomeVM.swift in Sources */,
 				99F999D8289F696A00D1E6FC /* GlobalHelpers.swift in Sources */,
 				99F999D6289F68F300D1E6FC /* Movie.swift in Sources */,
+				99F999E0289FB4AB00D1E6FC /* TopMoviePreview.swift in Sources */,
 				99F999DC289F6A6600D1E6FC /* StandardHomeMovie.swift in Sources */,
 				996A1C5F28281981005731E7 /* SwiftUI_NetflixApp.swift in Sources */,
 			);
