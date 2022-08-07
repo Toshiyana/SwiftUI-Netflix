@@ -38,6 +38,7 @@ struct TopMoviePreview: View {
                         HStack {
                             Text(category)
                                 .foregroundColor(.white)
+                                .font(.footnote)
                             
                             if !isCategoryLast(category) {
                                 // 最後のcategoryでないときに丸点をつける
@@ -49,10 +50,31 @@ struct TopMoviePreview: View {
                     }
                 }
                 
-                Text("Row of buttons")
-                    .foregroundColor(.white)
-            }
-        }
+                HStack {
+                    Spacer()
+                    
+                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                        //
+                    }
+                    
+                    Spacer()
+                    
+                    WhiteButton(text: "play", imageName: "play.fill") {
+                        //
+                    }
+                    .frame(width: 120)
+                    
+                    Spacer()
+                    
+                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                        //
+                    }
+                    
+                    Spacer()
+                }
+            }//: VStack
+        } //: ZStack
+        .foregroundColor(.white)
     }
 }
 
