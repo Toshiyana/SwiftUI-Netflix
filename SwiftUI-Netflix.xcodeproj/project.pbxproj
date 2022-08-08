@@ -23,6 +23,7 @@
 		99F999E9289FFF1600D1E6FC /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999E8289FFF1600D1E6FC /* MovieDetail.swift */; };
 		99F999EB28A0123C00D1E6FC /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999EA28A0123C00D1E6FC /* Episode.swift */; };
 		99F999ED28A0966600D1E6FC /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999EC28A0966600D1E6FC /* CustomTabSwitcher.swift */; };
+		99F999F028A0ACC900D1E6FC /* MoreLikeThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999EF28A0ACC900D1E6FC /* MoreLikeThis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		99F999E8289FFF1600D1E6FC /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		99F999EA28A0123C00D1E6FC /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		99F999EC28A0966600D1E6FC /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
+		99F999EF28A0ACC900D1E6FC /* MoreLikeThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLikeThis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		996A1C5D28281981005731E7 /* SwiftUI-Netflix */ = {
 			isa = PBXGroup;
 			children = (
+				99F999EE28A0ACA400D1E6FC /* MovieDetail */,
 				996A1C5E28281981005731E7 /* SwiftUI_NetflixApp.swift */,
 				996A1C6028281981005731E7 /* ContentView.swift */,
 				99F999E8289FFF1600D1E6FC /* MovieDetail.swift */,
@@ -132,6 +135,14 @@
 				99F999D7289F696A00D1E6FC /* GlobalHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		99F999EE28A0ACA400D1E6FC /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				99F999EF28A0ACC900D1E6FC /* MoreLikeThis.swift */,
+			);
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 				99F999E0289FB4AB00D1E6FC /* TopMoviePreview.swift in Sources */,
 				99F999DC289F6A6600D1E6FC /* StandardHomeMovie.swift in Sources */,
 				996A1C5F28281981005731E7 /* SwiftUI_NetflixApp.swift in Sources */,
+				99F999F028A0ACC900D1E6FC /* MoreLikeThis.swift in Sources */,
 				99F999ED28A0966600D1E6FC /* CustomTabSwitcher.swift in Sources */,
 				99F999E2289FC31500D1E6FC /* SmallVerticalButton.swift in Sources */,
 				99F999E4289FC61E00D1E6FC /* PlayButton.swift in Sources */,

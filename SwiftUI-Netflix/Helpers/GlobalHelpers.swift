@@ -18,7 +18,8 @@ let exampleMovie1 = Movie(
     numberOfSeasons: 1,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6])
 
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -31,6 +32,7 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadLine: "Watch Season 2 Now")
 
 let exampleMovie3 = Movie(
@@ -43,7 +45,8 @@ let exampleMovie3 = Movie(
     numberOfSeasons: 3,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
 let exampleMovie4 = Movie(
     id: UUID().uuidString,
@@ -56,6 +59,7 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadLine: "Watch Season 4 Now")
 
 let exampleMovie5 = Movie(
@@ -68,7 +72,8 @@ let exampleMovie5 = Movie(
     numberOfSeasons: 5,
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
-    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel")
+    cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [])
 
 let exampleMovie6 = Movie(
     id: UUID().uuidString,
@@ -81,9 +86,12 @@ let exampleMovie6 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Boran bo Odan, Janje Friese",
     cast: "Louis Hofmann, Oliver Masucci, Jordis Triebel",
+    moreLikeThisMovies: [],
     promotionHeadLine: "Watch Season 6 Now")
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+var exampleMovies: [Movie] {
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginers and Endings", description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
 
