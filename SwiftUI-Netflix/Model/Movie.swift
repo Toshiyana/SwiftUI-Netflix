@@ -32,6 +32,8 @@ struct Movie: Identifiable {
     
     var promotionHeadLine: String?
     
+    var trailers: [Trailer]
+    
     var numberOfSeasonsDisplay: String {
         guard let num = numberOfSeasons else { return "" }
         
