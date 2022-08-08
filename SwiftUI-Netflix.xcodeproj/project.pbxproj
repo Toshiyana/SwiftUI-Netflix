@@ -28,6 +28,7 @@
 		99F999F428A115F000D1E6FC /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999F328A115F000D1E6FC /* SwiftUIVideoView.swift */; };
 		99F999F728A1167000D1E6FC /* VideoPreviewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999F628A1167000D1E6FC /* VideoPreviewImage.swift */; };
 		99F999F928A118D700D1E6FC /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999F828A118D700D1E6FC /* TrailerList.swift */; };
+		99F999FB28A1475300D1E6FC /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F999FA28A1475300D1E6FC /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		99F999F328A115F000D1E6FC /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		99F999F628A1167000D1E6FC /* VideoPreviewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewImage.swift; sourceTree = "<group>"; };
 		99F999F828A118D700D1E6FC /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		99F999FA28A1475300D1E6FC /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				99F999EC28A0966600D1E6FC /* CustomTabSwitcher.swift */,
 				99F999EF28A0ACC900D1E6FC /* MoreLikeThis.swift */,
 				99F999F828A118D700D1E6FC /* TrailerList.swift */,
+				99F999FA28A1475300D1E6FC /* EpisodesView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F999FB28A1475300D1E6FC /* EpisodesView.swift in Sources */,
 				99F999D1289F66D900D1E6FC /* HomeView.swift in Sources */,
 				99F999F228A1144900D1E6FC /* Trailer.swift in Sources */,
 				99F999EB28A0123C00D1E6FC /* Episode.swift in Sources */,
