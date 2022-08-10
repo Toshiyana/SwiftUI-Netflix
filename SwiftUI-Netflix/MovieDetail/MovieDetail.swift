@@ -93,8 +93,8 @@ struct MovieDetail: View {
                             
                             ForEach(0..<(movie.numberOfSeasons ?? 0), id: \.self) { season in
                                 Button(action: {
-                                    self.selectedSeason = season + 1
-                                    self.showSeasonPicker = false
+                                    selectedSeason = season + 1
+                                    showSeasonPicker = false
                                 }, label: {
                                     Text("Season \(season + 1)")
                                         .foregroundColor(selectedSeason == season + 1 ? .white : .gray)
@@ -106,7 +106,7 @@ struct MovieDetail: View {
                             Spacer()
                             
                             Button(action: {
-                                self.showSeasonPicker = false
+                                showSeasonPicker = false
                             }, label: {
                                 Image(systemName: "x.circle.fill")
                                     .foregroundColor(.white)
