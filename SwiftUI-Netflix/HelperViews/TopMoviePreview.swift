@@ -72,6 +72,7 @@ struct TopMoviePreview: View {
                     
                     Spacer()
                 }
+                .padding(.vertical, 14)
             }//: VStack
             .background(
                 LinearGradient.blackOpacityGradient
