@@ -16,8 +16,19 @@ class HomeVM: ObservableObject {
         movies.keys.map({ String($0) })
     }
     
-    public func getMovie(forCategory category: String) -> [Movie] {
-        movies[category] ?? []
+    public func getMovie(forCategory category: String, andHomeRow homeRow: HomeTopRow) -> [Movie] {
+        switch homeRow {
+        case .home:
+            return movies[category] ?? []
+        case .movies:
+            return (movies[category] ?? []).filter({ $0.movieType == .movie })
+        case .tvShows:
+            return (movies[category] ?? []).filter({ $0.movieType == .tvShow })
+        case .myList:
+            return movies[category] ?? []
+            // TODO: Setup MyList Property
+        }
+        
     }
     
     init() {

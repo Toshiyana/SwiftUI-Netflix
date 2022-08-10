@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9967122728A2828E002A245F /* HomeStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9967122628A2828E002A245F /* HomeStack.swift */; };
 		996A1C5F28281981005731E7 /* SwiftUI_NetflixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1C5E28281981005731E7 /* SwiftUI_NetflixApp.swift */; };
 		996A1C6128281981005731E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996A1C6028281981005731E7 /* ContentView.swift */; };
 		996A1C6328281984005731E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 996A1C6228281984005731E7 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9967122628A2828E002A245F /* HomeStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStack.swift; sourceTree = "<group>"; };
 		996A1C5B28281981005731E7 /* SwiftUI-Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Netflix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		996A1C5E28281981005731E7 /* SwiftUI_NetflixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_NetflixApp.swift; sourceTree = "<group>"; };
 		996A1C6028281981005731E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				99F999D0289F66D900D1E6FC /* HomeView.swift */,
 				99F999DD289F6B2800D1E6FC /* HomeVM.swift */,
+				9967122628A2828E002A245F /* HomeStack.swift */,
 			);
 			path = HomeViews;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				99F999DC289F6A6600D1E6FC /* StandardHomeMovie.swift in Sources */,
 				996A1C5F28281981005731E7 /* SwiftUI_NetflixApp.swift in Sources */,
 				99F999F028A0ACC900D1E6FC /* MoreLikeThis.swift in Sources */,
+				9967122728A2828E002A245F /* HomeStack.swift in Sources */,
 				99F999ED28A0966600D1E6FC /* CustomTabSwitcher.swift in Sources */,
 				99F999F928A118D700D1E6FC /* TrailerList.swift in Sources */,
 				99F999E2289FC31500D1E6FC /* SmallVerticalButton.swift in Sources */,
