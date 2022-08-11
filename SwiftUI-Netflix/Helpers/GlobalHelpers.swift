@@ -173,19 +173,3 @@ var exampleMovies: [Movie] {
 }
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginers and Endings", description: "Six months after the disappearances, the police form a task force. In 2052, Jonas learns that most of Winden perished in an apocalyptic event.", season: 2, episode: 1)
-
-extension LinearGradient {
-    static let blackOpacityGradient = LinearGradient(
-        gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]),
-        startPoint: .top,
-        endPoint: .bottom
-    )
-}
-
-extension String {
-    func widthOfString(usingFont font: UIFont) -> CGFloat {
-        let fontAttributes = [NSAttributedString.Key.font: font]
-        let size = self.size(withAttributes: fontAttributes)
-        return size.width
-    }
-}
