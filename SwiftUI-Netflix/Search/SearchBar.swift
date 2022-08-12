@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBar: View {
     @Binding var text: String
-    @State private var isEditing = true
+    @State private var isEditing = false
     @Binding var isLoading: Bool
     
     var body: some View {
@@ -23,16 +23,18 @@ struct SearchBar: View {
                     .foregroundColor(Color.graySearchText)
                     .padding(.leading, 10)
                 
-                TextField("Search", text: $text)
-                    .frame(height: 36)
-                    .background(Color.graySearchBackground)
-                    .cornerRadius(8)
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        isEditing = true
-                    }
+                withAnimation(.default) {
+                    TextField("Search", text: $text)
+                        .frame(height: 36)
+                        .background(Color.graySearchBackground)
+                        .cornerRadius(8)
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            isEditing = true
+                        }
+                }
                 
-                if !text.isEmpty {
+                if !text.isEmpty && isEditing {
                     if isLoading {
                         ActivityIndicator(style: .medium, animate: .constant(true))
                             .configure {
@@ -52,16 +54,19 @@ struct SearchBar: View {
                 }
                 
                 if isEditing {
-                    Button(action: {
-                        // clear text, hide both buttons, give up first-responder
-                        text = ""
-                        isEditing = false
-                        hideKeyboard()
-                    }, label: {
-                        Text("Cancel")
-                            .foregroundColor(.white)
-                    })
-                    .padding(.leading, 10)
+                    withAnimation(.default) {
+                        Button(action: {
+                            // clear text, hide both buttons, give up first-responder
+                            text = ""
+                            isEditing = false
+                            hideKeyboard()
+                        }, label: {
+                            Text("Cancel")
+                                .foregroundColor(.white)
+                        })
+                        .padding(.leading, 10)
+                        .transition(.move(edge: .trailing)) // 機能していない
+                    }
                 }
             }
         }

@@ -17,6 +17,10 @@ class SearchVM: ObservableObject {
     
     @Published var isShowingPopularMovies = true
     
+    init() {
+        getPopularMovies()
+    }
+    
     public func updateSearchText(with text: String) {
         setViewState(to: .loading)
         
@@ -25,6 +29,7 @@ class SearchVM: ObservableObject {
             getSearchResults(forText: text)
         } else {
             isShowingPopularMovies = true // keep showing popular movies
+            getPopularMovies()
         }
     }
     
