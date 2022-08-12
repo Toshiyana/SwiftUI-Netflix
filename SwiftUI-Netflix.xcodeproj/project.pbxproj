@@ -17,6 +17,7 @@
 		99958A7928A66003001726BD /* ComingSoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99958A7828A66003001726BD /* ComingSoon.swift */; };
 		99958A7B28A660E0001726BD /* ComingSoonVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99958A7A28A660E0001726BD /* ComingSoonVM.swift */; };
 		99958A7D28A6675D001726BD /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99958A7C28A6675D001726BD /* TrackableScrollView.swift */; };
+		99958A8028A6C152001726BD /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99958A7F28A6C152001726BD /* DownloadsView.swift */; };
 		99B8337C28A4866E005FC40A /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8337B28A4866D005FC40A /* SearchBar.swift */; };
 		99B8337E28A48C43005FC40A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8337D28A48C43005FC40A /* ActivityIndicator.swift */; };
 		99B8338028A4B598005FC40A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B8337F28A4B598005FC40A /* Extensions.swift */; };
@@ -57,6 +58,7 @@
 		99958A7828A66003001726BD /* ComingSoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoon.swift; sourceTree = "<group>"; };
 		99958A7A28A660E0001726BD /* ComingSoonVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonVM.swift; sourceTree = "<group>"; };
 		99958A7C28A6675D001726BD /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		99958A7F28A6C152001726BD /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		99B8337B28A4866D005FC40A /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		99B8337D28A48C43005FC40A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		99B8337F28A4B598005FC40A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				99F999F528A1165400D1E6FC /* VideoPlayer */,
 				99B8337A28A48650005FC40A /* Search */,
 				99958A6F28A652AA001726BD /* ComingSoon */,
+				99958A7E28A6C122001726BD /* Downloads */,
 				99F999E5289FFE7300D1E6FC /* HelperViews */,
 				99F999E6289FFEAB00D1E6FC /* Model */,
 				99F999E7289FFECC00D1E6FC /* Helpers */,
@@ -149,6 +152,14 @@
 				99958A7C28A6675D001726BD /* TrackableScrollView.swift */,
 			);
 			path = ComingSoon;
+			sourceTree = "<group>";
+		};
+		99958A7E28A6C122001726BD /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				99958A7F28A6C152001726BD /* DownloadsView.swift */,
+			);
+			path = Downloads;
 			sourceTree = "<group>";
 		};
 		99B8337A28A48650005FC40A /* Search */ = {
@@ -304,6 +315,7 @@
 			files = (
 				99B8338A28A5EFF1005FC40A /* PopularMovieView.swift in Sources */,
 				99F999FB28A1475300D1E6FC /* EpisodesView.swift in Sources */,
+				99958A8028A6C152001726BD /* DownloadsView.swift in Sources */,
 				99B8338828A4BB79005FC40A /* GenerateMovies.swift in Sources */,
 				99F999D1289F66D900D1E6FC /* HomeView.swift in Sources */,
 				99F999F228A1144900D1E6FC /* Trailer.swift in Sources */,
