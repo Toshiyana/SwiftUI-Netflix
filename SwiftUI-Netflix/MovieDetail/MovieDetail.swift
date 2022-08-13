@@ -44,8 +44,8 @@ struct MovieDetail: View {
                             
                             MovieInfoSubHeadline(movie: movie)
                             
-                            if let promotionHeadLine = movie.promotionHeadLine {
-                                Text(promotionHeadLine)
+                            if let promotionHeadline = movie.promotionHeadline {
+                                Text(promotionHeadline)
                                     .bold()
                                     .font(.headline)
                             }

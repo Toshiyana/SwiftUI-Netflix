@@ -35,9 +35,12 @@ struct Movie: Identifiable {
         return episodes == nil ? .movie : .tvShow
     }
     
-    var promotionHeadLine: String?
+    var promotionHeadline: String?
     
     var trailers: [Trailer]
+    
+    var previewImageName: String
+    var previewVideoURL: URL?
     
     var numberOfSeasonsDisplay: String {
         guard let num = numberOfSeasons else { return "" }
