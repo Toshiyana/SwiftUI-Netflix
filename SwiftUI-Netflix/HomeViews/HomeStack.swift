@@ -12,7 +12,7 @@ struct HomeStack: View {
     var topRowSelection: HomeTopRow
     var selectedGenre: HomeGenre
     @Binding var movieDetailToShow: Movie?
-    
+        
     var body: some View {
         ForEach(vm.allCategories, id: \.self) { category in
             VStack {
